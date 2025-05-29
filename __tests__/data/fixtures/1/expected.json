@@ -1,0 +1,241 @@
+[
+  {
+    "filePath": "/Users/kristi.jorgji/Desktop/libs/eslint-config-typescript/test.ts",
+    "messages": [
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'bip39' is defined but never used. Allowed unused vars must match /^_/u.",
+        "line": 1,
+        "column": 13,
+        "nodeType": null,
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "import/no-unresolved",
+        "severity": 2,
+        "message": "Unable to resolve path to module 'bip39'.",
+        "line": 1,
+        "column": 24,
+        "nodeType": "Literal",
+        "endLine": 1,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'bs58' is defined but never used. Allowed unused vars must match /^_/u.",
+        "line": 2,
+        "column": 8,
+        "nodeType": null,
+        "messageId": "unusedVar",
+        "endLine": 2,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "import/no-unresolved",
+        "severity": 2,
+        "message": "Unable to resolve path to module 'bs58'.",
+        "line": 2,
+        "column": 18,
+        "nodeType": "Literal",
+        "endLine": 2,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 3,
+        "column": 1,
+        "nodeType": "ImportDeclaration",
+        "endLine": 3,
+        "endColumn": 43,
+        "fix": {
+          "range": [
+            99,
+            99
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'ed25519' is defined but never used. Allowed unused vars must match /^_/u.",
+        "line": 3,
+        "column": 13,
+        "nodeType": null,
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "import/no-unresolved",
+        "severity": 2,
+        "message": "Unable to resolve path to module 'ed25519-hd-key'.",
+        "line": 3,
+        "column": 26,
+        "nodeType": "Literal",
+        "endLine": 3,
+        "endColumn": 42
+      },
+      {
+        "ruleId": "prettier/prettier",
+        "severity": 2,
+        "message": "Replace `z,·x,·c` with `·z,·x,·c·`",
+        "line": 4,
+        "column": 9,
+        "nodeType": null,
+        "messageId": "replace",
+        "endLine": 4,
+        "endColumn": 16,
+        "fix": {
+          "range": [
+            108,
+            115
+          ],
+          "text": " z, x, c "
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'z' is defined but never used. Allowed unused vars must match /^_/u.",
+        "line": 4,
+        "column": 9,
+        "nodeType": null,
+        "messageId": "unusedVar",
+        "endLine": 4,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "sort-imports",
+        "severity": 2,
+        "message": "Member 'x' of the import declaration should be sorted alphabetically.",
+        "line": 4,
+        "column": 12,
+        "nodeType": "ImportSpecifier",
+        "messageId": "sortMembersAlphabetically",
+        "endLine": 4,
+        "endColumn": 13,
+        "fix": {
+          "range": [
+            108,
+            115
+          ],
+          "text": "c, x, z"
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'c' is defined but never used. Allowed unused vars must match /^_/u.",
+        "line": 4,
+        "column": 15,
+        "nodeType": null,
+        "messageId": "unusedVar",
+        "endLine": 4,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "import/no-unresolved",
+        "severity": 2,
+        "message": "Unable to resolve path to module './a'.",
+        "line": 4,
+        "column": 23,
+        "nodeType": "Literal",
+        "endLine": 4,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-redeclare",
+        "severity": 2,
+        "message": "'x' is already defined.",
+        "line": 6,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "redeclared",
+        "endLine": 6,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-import-assign",
+        "severity": 2,
+        "message": "'x' is read-only.",
+        "line": 6,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "readonly",
+        "endLine": 6,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "prettier/prettier",
+        "severity": 2,
+        "message": "Delete `····`",
+        "line": 7,
+        "column": 1,
+        "nodeType": null,
+        "messageId": "delete",
+        "endLine": 7,
+        "endColumn": 5,
+        "fix": {
+          "range": [
+            151,
+            155
+          ],
+          "text": ""
+        }
+      },
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 2,
+        "message": "'d' is assigned a value but never used. Allowed unused vars must match /^_/u.",
+        "line": 9,
+        "column": 5,
+        "nodeType": null,
+        "messageId": "unusedVar",
+        "endLine": 9,
+        "endColumn": 6
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 16,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 4,
+    "fixableWarningCount": 0,
+    "source": "import * as bip39 from 'bip39';\nimport bs58 from 'bs58';\nimport * as ed25519 from 'ed25519-hd-key';\nimport {z, x, c} from './a';\n\nconst x: number = 5;\n    console.log(x);\n\nlet d = 2;\n",
+    "usedDeprecatedRules": [
+      {
+        "ruleId": "quotes",
+        "replacedBy": [
+          "@stylistic/js/quotes"
+        ],
+        "info": {
+          "message": "Formatting rules are being moved out of ESLint core.",
+          "url": "https://eslint.org/blog/2023/10/deprecating-formatting-rules/",
+          "deprecatedSince": "8.53.0",
+          "availableUntil": "10.0.0",
+          "replacedBy": [
+            {
+              "message": "ESLint Stylistic now maintains deprecated stylistic core rules.",
+              "url": "https://eslint.style/guide/migration",
+              "plugin": {
+                "name": "@stylistic/eslint-plugin-js",
+                "url": "https://eslint.style/packages/js"
+              },
+              "rule": {
+                "name": "quotes",
+                "url": "https://eslint.style/rules/js/quotes"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

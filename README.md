@@ -1,34 +1,73 @@
 # @kristijorgji/eslint-config-typescript
 
-Eslint and prettier rules for general purpose typescript projects.
-If you want rules specific for React/NextJS or other frameworks have to enrich these rules after including.
+A general-purpose ESLint and Prettier configuration for TypeScript projects (non-browser environments).  
+If you need rules specific to React, Next.js, or other frameworks, you can extend or override these rules after including this config.
 
+# Table of Contents
 
-## Usage
-### Install deps
-Install the correct versions of each package, which are listed by the command:
-```shell
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+    - [Configuration](#configuration)
+- [Development](#development)
+- [License](#license)
+
+## Requirements
+
+- ESLint version **>= 8.21.0** with support for Flat Config.
+
+## Installation
+
+Install the package and peer dependencies using:
+
+```bash
 yarn add --dev @kristijorgji/eslint-config-typescript@latest
 ```
 
-If you are migrating old service to new plugin first please make sure to first remove old dependencies that are duplicates like example `yarn remove eslint prettier @typescript-eslint/eslint-plugin etc`
+> **Note:**  
+> When migrating from an older ESLint setup, please remove conflicting or duplicate dependencies first, for example:  
+> `yarn remove eslint prettier @typescript-eslint/eslint-plugin`
 
-### Config
-Add the following to your `.eslintrc.js`:
+## Usage
+
+### Configuration
+
+For ESLint **>= 9.x**, use `FlatCompat.extends` for compatibility.
+
+Example `eslint.config.js`:
+
 ```js
-module.exports = {
-    extends: ['@kristijorgji/eslint-config-typescript'],
-};
+const { FlatCompat } = require('@eslint/eslintrc');
+const js = require('@eslint/js');
+const { defineConfig } = require('eslint/config');
 
+const compat = new FlatCompat({
+    baseDirectory: __dirname,
+    recommendedConfig: js.configs.recommended,
+    allConfig: js.configs.all,
+});
+
+module.exports = defineConfig([
+    {
+        files: ['src/**/*.ts', '__tests__/**/*.ts'],
+        extends: compat.extends('@kristijorgji/eslint-config-typescript'),
+    },
+]);
 ```
 
-## Develop
-More info on how to develop your custom eslint config can be found here: https://eslint.org/docs/developer-guide/shareable-configs
+## Development
 
-To develop locally you can install with `yarn add --dev pathtolocalfile` example
-`yarn add --dev /Users/kristi.jorgji/Desktop/fl-lite/eslint-config-typescript`
- 
-You need to run the above command after every plugin change.
+Learn more about creating custom ESLint configs here:  
+[ESLint Shareable Configs Guide](https://eslint.org/docs/developer-guide/shareable-configs)
+
+To develop locally, you can link your local package using:
+
+```bash
+yarn add --dev /path/to/local/eslint-config-typescript
+```
+
+> You need to run this command after every change to your local plugin.
+
 ## License
 
 [MIT](LICENSE)
